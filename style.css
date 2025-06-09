@@ -1,0 +1,3598 @@
+* {
+    padding: 0;
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet");
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/**************** RESPONSIVE MEDIA QUERIES BREAKPOINTS ********************
+
+@media (min-width: 320px) { smartphones, iPhone, portrait 480x320 phones }
+
+@media (min-width: 481px) { portrait e-readers, (Nook/Kindle), smaller tablets @ 600 or 640 wide }
+
+@media (min-width: 641px) { portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 phones }
+
+@media (min-width: 961px) { tablet, landscape iPad, low-resolution laptops and desktops }
+
+@media (min-width: 1025px) { big landscape tablets, laptops and desktops }
+
+@media (min-width: 1281px) { hi-res laptops and desktops }
+
+In practice, many designers convert pixels to rems, largely because ems afford better zooming. At standard zoom 1rem === 16px, 
+multiply pixels by 1rem/16px to get rems. For example, 320px === 20rem.
+
+*******************************************/
+
+
+
+
+/* smartphones, iPhone, portrait 480x320 phones;
+1em === 16px
+320px/16=20em */
+
+/* @media (min-width: 20em) {
+} */
+
+/* BODY */
+
+body {
+    background-color: #F9F9F9;
+    font-family: "Montserrat", Sans-serif;
+    font-style: normal;
+}
+
+/* HEADER */
+
+header {
+    display: block;
+    background-color: #F9F9F9;
+    position: static;
+    z-index: 1;
+    top: 0;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    gap: 20%;
+    width: 45%;
+}
+
+.header-container h2 {
+    display: none;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    float: left;
+    color: #000000;
+    justify-content: center;
+    font-size: 1.5rem;
+    height: auto;
+    width: 1.625rem;
+    padding-top: 0.25rem;   
+}
+
+/* NAV */
+
+nav {
+    width: 10%;
+}
+
+.icons {
+    align-items: center;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 0.6875rem;
+    align-content: center;
+    gap: 2.5rem;
+    padding-left: 0.5rem;
+    height: auto;
+    font-size: 1.625rem;
+}
+    
+.icons a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    transition: all ease-out 400ms;
+    font-size: 1.5rem;
+    align-content: center;
+    align-items: center;
+}
+
+.icons a:hover {
+    font-weight: 400;
+    border: green solid 2px;
+    border-radius: 3px;
+    padding: 0.25rem;
+}
+
+.nav-links {
+    display: none;
+}
+
+/* MAIN */
+
+main {
+    display: block;
+    background-color: #E4E4E4;
+}
+
+/* main SECTION-ONE COLUMN-ONE */
+
+main .section-one .column-one {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #E4E4E4;
+}
+
+main .section-one .column-one img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* main SECTION-ONE COLUMN-TWO */
+
+main .section-one .column-two {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #E4E4E4;
+    margin: 2rem 1rem 2rem 1rem;
+}
+
+main .section-one .column-two h1 {
+    font-weight: 700;
+    color: green;
+    display: block;
+    max-width: 100%;
+    font-size: 1.875rem;
+    line-height: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+main .section-one .column-two h3 {
+    font-weight: 580;
+    display: block;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size: 1.125rem;
+    line-height: 1.88rem;
+    padding-bottom: 1.5rem;
+}
+
+main .section-one .column-two .bubble-btn {
+   background-color: green;
+   color: #FFFFFF;
+   border: green solid 2px;
+   border-radius: 3px;
+   text-decoration: none;
+   position: relative;
+   transition: transform 0.9s;
+   width: 100%;
+   height: 2.5em;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   font-weight: 500;
+   font-size: 1rem;
+   text-align: center;
+} 
+
+main .column-two .bubble-btn:hover {
+    animation: bubble 0.9s ease-out;
+}
+
+@keyframes bubble {
+    0% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    115% {
+        transform: scale(1);
+    }
+}
+
+/* main SECTION-TWO COLUMN-ONE */
+
+main .section-two .column-one {
+    display: none;
+}
+
+/* main SECTION-TWO COLUMN-TWO */
+
+main .section-two .column-two {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #F9F9F9;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* main section-two column-two CARD-ONE */
+    
+main .section-two .column-two .card-one {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    background-color: #F9F9F9;
+    margin: 1rem 1rem 4rem 1rem;
+}
+    
+main .section-two .column-two .card-one img {
+    width: 100%;
+    height: auto;
+}
+
+main .section-two .column-two .card-one h3 {
+    font-weight: 580;
+    color: #000000;
+    display: block;
+    font-size: 1.125rem;
+    margin: 1rem 1rem 0.5rem 1.25rem;
+}
+
+main .section-two .column-two .card-one h5 {
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    font-size: 0.75rem;
+    margin: 1rem 1rem 0.5rem 1.25rem;
+    letter-spacing: 0.03125rem;
+}
+
+main .section-two .column-two .card-one a {
+    font-weight: 500;
+    color: green;
+    text-decoration: none;
+    transition: all ease-out 400ms;
+    display: block;
+    font-size: 0.875rem;
+    width: 6.75em;
+    padding: 0.25rem;
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+
+main .section-two .column-two .card-one a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+    padding: 0.25rem;
+}    
+    
+/* main section-two column-two CARD-TWO */
+
+main .section-two .column-two .card-two {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    background-color: #F9F9F9;
+    margin: 1rem 1rem 4rem 1rem;
+} 
+
+main .section-two .column-two .card-two img {
+    width: 100%;
+    height: auto; 
+}
+
+main .section-two .column-two .card-two h3 {
+    font-weight: 580;
+    color: #000000;
+    display: block;
+    font-size: 1.125rem;
+    margin: 1rem 1rem 0.5rem 1.25rem;
+}
+
+main .section-two .column-two .card-two h5 {
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    font-size: 0.75rem;
+    margin: 1rem 1rem 0.5rem 1.25rem;
+    letter-spacing: 0.03125rem;
+}
+
+main .section-two .column-two .card-two a {
+    font-weight: 500;
+    color: green;
+    text-decoration: none;
+    transition: all ease-out 400ms;
+    display: block;
+    font-size: 0.875rem;
+    width: 6.75em;
+    padding: 0.25rem;
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+
+main .section-two .column-two .card-two a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+    padding: 0.25rem;
+}
+
+/* main section-two column-two CARD-THREE */
+    
+main .section-two .column-two .card-three {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    background-color: #F9F9F9;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+main .section-two .column-two .card-three img {
+    width: 100%;
+    height: auto;
+}
+
+main .section-two .column-two .card-three h3 {
+    font-weight: 580;
+    color: #000000;
+    display: block;
+    font-size: 1.125rem;
+    margin: 1rem 1rem 0.5rem 1.25rem;
+}
+
+main .section-two .column-two .card-three h5 {
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    font-size: 0.75rem;
+    letter-spacing: 0.03125rem;
+    margin: 1rem 1rem 0.5rem 1.25rem;
+}
+
+main .section-two .column-two .card-three a {
+    font-weight: 500;
+    color: green;
+    text-decoration: none;
+    transition: all ease-out 400ms;
+    display: block;
+    font-size: 0.875rem;
+    width: 6.75em;
+    padding: 0.25rem;
+    margin: 1rem 1rem 0.5rem 1rem;
+}
+
+main .section-two .column-two .card-three a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+    padding: 0.25rem;
+}
+
+/* main SECTION-THREE */
+
+main .section-three {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #F9F9F9;
+    padding: 0rem 1rem 2rem;
+}
+    
+main .section-three h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: #F9F9F9;
+    color: green;
+}
+
+/* main SECTION-THREE COLUMN-ONE */
+
+main .section-three .column-one {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #F9F9F9;
+} 
+
+/* main section-three column-one CARD-ONE */
+
+main .section-three .column-one .card-one {
+    background-color: #E4E4E4;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+main .section-three .column-one .card-one .article {
+    padding: 1.25rem;
+}
+
+main .section-three .column-one .card-one h3 {
+    font-weight: 580;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+main .section-three .column-one .card-one a {
+    font-weight: 500;
+    color: green;
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all ease-out 400ms;
+    width: 12em;
+}
+
+main .section-three .column-one .card-one a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+}
+
+/* main section-three column-one CARD-TWO */
+
+main .section-three .column-one .card-two {
+    background-color: #E4E4E4;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+main .section-three .column-one .card-two .article {
+   padding: 1.25rem;
+}
+
+main .section-three .column-one .card-two h3 {
+    font-weight: 580;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+main .section-three .column-one .card-two a {
+    font-weight: 500;
+    color: green;
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all ease-out 400ms;
+    width: 7.875em;
+}
+
+main .section-three .column-one .card-two a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+}
+
+/* main section-three column-one CARD-THREE */
+
+main .section-three .column-one .card-three {
+    background-color: #E4E4E4;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+main .section-three .column-one .card-three .article {
+   padding: 1.25rem;
+}
+
+main .section-three .column-one .card-three h3 {
+    font-weight: 580;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+main .section-three .column-one .card-three a {
+    font-weight: 500;
+    color: green;
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all ease-out 400ms;
+    width: 4.5em;
+}
+
+main .section-three .column-one .card-three a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+}
+
+main .section-three img, h4, h5 {
+    display: none;
+}
+
+/* main SECTION-THREE COLUMN-TWO */
+
+main .section-three .column-two {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    background-color: #F9F9F9;
+}
+
+/* main section-three column-two CARD-ONE */
+
+main .section-three .column-two .card-one {
+    background-color: #E4E4E4;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+main .section-three .column-two .card-one .article {
+   padding: 1.25rem;
+}
+
+main .section-three .column-two .card-one h3 {
+    font-weight: 580;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+main .section-three .column-two .card-one a {
+    font-weight: 500;
+    color: green;
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all ease-out 400ms;
+    width: 3.3125em;
+}
+
+main .section-three .column-two .card-one a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+}
+
+/* main section-three column-two CARD-TWO */
+
+main .section-three .column-two .card-two {
+    background-color: #E4E4E4;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+main .section-three .column-two .card-two .article {
+   padding: 1.25rem;
+}
+
+main .section-three .column-two .card-two h3 {
+    font-weight: 580;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+main .section-three .column-two .card-two a {
+    font-weight: 500;
+    color: green;
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all ease-out 400ms;
+    width: 6rem;
+}
+
+main .section-three .column-two .card-two a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+}
+
+/* main section-three column-two CARD-THREE */
+
+main .section-three .column-two .card-three {
+    background-color: #E4E4E4;
+    overflow: hidden;
+}
+
+main .section-three .column-two .card-three {
+    padding: 1.25rem;
+}
+
+main .section-three .column-two .card-three h3 {
+    font-weight: 580;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+main .section-three .column-two .card-three a {
+    font-weight: 500;
+    color: green;
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    transition: all ease-out 400ms;
+    width: 6.25em;
+}
+
+main .section-three .column-two .card-three a:hover {
+    font-weight: 500;
+    background-color: green;
+    color: #FFFFFF;
+    border: green solid 2px;
+    border-radius: 3px;
+}
+
+/* main SECTION-FOUR */
+
+main .section-four h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: #F9F9F9;
+    color: green;
+}
+
+/* main SECTION-FIVE */
+
+main .section-five {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding-bottom: 1.5rem;
+    background-color: #F9F9F9;
+}
+
+main .section-five .column-one video {
+    max-width: 100%;
+    height: auto;
+}
+
+main .section-five .column-one h3 {
+    display: none;
+}
+
+main .section-five .column-one p {
+    display: none;
+}
+
+main .section-five .column-two {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    max-width: 100%;
+    height: 100%;
+    background-color: #F9F9F9;
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 100%;
+    height: 4rem;
+    align-items: center;
+    padding: 1.25rem;
+    display: flex;
+}
+
+.footer-container h6 {
+    font-weight: 300;
+    color: #000000;
+    font-size: 0.625rem;
+    display: block;
+}
+
+footer ul {
+    display: none;
+}
+
+
+    /******************** RESPONSIVE ********************/
+
+
+    /* portrait e-readers, (Nook/Kindle), smaller tablets @ 600 or 640 wide;    
+    1em === 16px
+    481px/16=30.1em */
+
+    @media (min-width: 30.1em) {
+
+    body {
+        background-color: #F9F9F9;
+        font-family: "Montserrat", Sans-serif;
+        font-style: normal;
+    }
+    
+    /* HEADER */
+    
+    header {
+        display: block;
+        background-color: #F9F9F9;
+        position: static;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    
+    .header-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 2rem;
+        gap: 5%;
+        width: 45%;
+    }
+    
+    .header-container h2 {
+        display: none;
+    }
+    
+    .logo {
+        align-items: center;
+        display: flex;
+        color: #000000;
+        justify-content: center;
+        padding-top: 0.25rem;
+        height: auto;
+        width: 1.75rem;
+    }
+    
+    /* NAV */
+
+    .icons {
+        align-items: center;
+        display: inline-flex;
+        justify-content: space-between;
+        padding-top: 0.6875rem;
+        padding-left: 3rem;
+        align-content: center;
+        gap: 5rem;
+        height: auto;
+        font-size: 1.75rem;
+    }
+
+    .icons a {
+        color: #000000;
+        text-decoration: none;
+        display: block;
+        transition: all ease-out 400ms;
+        font-size: 1.5rem;
+        position: static;
+        align-content: center;
+    }
+
+    .icons a:hover {
+        font-weight: 500;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+    
+    /* MAIN */
+    
+    main {
+        display: block;
+        background-color: #E4E4E4;
+    }
+    
+    /* main SECTION-ONE COLUMN-ONE */
+    
+    main .section-one .column-one {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        background-color: #E4E4E4;
+    }
+    
+    main .section-one .column-one img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    /* main SECTION-ONE COLUMN-TWO */
+    
+    main .section-one .column-two {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        background-color: #E4E4E4;
+        margin: 2rem 1rem 2rem 1rem;
+    }
+
+    main .section-one .column-two h1 {
+        font-weight: 700;
+        color: green;
+        display: block;
+        max-width: 100%;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    main .section-one .column-two h3 {
+        font-weight: 580;
+        display: block;
+        flex-wrap: wrap;
+        max-width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.88rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    main .section-one .column-two .bubble-btn {
+       background-color: green;
+       color: #FFFFFF;
+       border: green solid 2px;
+       border-radius: 3px;
+       text-decoration: none;
+       position: relative;
+       transition: transform 0.9s;
+       width: 100%;
+       height: 2.625em;
+       padding-top: 0.5rem;
+       padding-bottom: 0.5rem;
+       font-weight: 500;
+       font-size: 1.125rem; 
+    }
+
+    main .column-two .bubble-btn:hover {
+        animation: bubble 0.9s ease-out;
+    }
+    
+    @keyframes bubble {
+        0% {
+            transform: scale(1);
+        }
+        75% {
+            transform: scale(1.2);
+        }
+        115% {
+            transform: scale(1);
+        }
+    }
+    
+    /* main SECTION-TWO COLUMN-ONE */
+    
+    main .section-two .column-one {
+        display: none;
+    }
+    
+    /* main SECTION-TWO COLUMN-TWO */
+    
+    main .section-two .column-two {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    /* main section-two column-two CARD-ONE */
+        
+    main .section-two .column-two .card-one {
+        max-width: 100%;
+        overflow: hidden;
+        display: block;
+        background-color: #F9F9F9;
+        margin: 1rem 1rem 4rem 1rem;
+    }
+        
+    main .section-two .column-two .card-one img {
+        width: 100%;
+        height: auto;
+    }
+
+    main .section-two .column-two .card-one h3 {
+        font-weight: 580;
+        color: #000000;
+        display: block;
+        font-size: 1.25rem;
+        margin-left: 1.25rem;
+    }
+
+    main .section-two .column-two .card-one h5 {
+        font-weight: 300;
+        color: #000000;
+        display: block;
+        font-size: 0.875rem;
+        letter-spacing: 0.03125rem;
+        margin-left: 1.25rem;
+    }
+
+    main .section-two .column-two .card-one a {
+        font-weight: 500;
+        color: green;
+        text-decoration: none;
+        transition: all ease-out 400ms;
+        display: block;
+        font-size: 1rem;
+        width: 6.75em;
+        padding: 0.25rem;
+        margin: 1rem 1rem 0.5rem 1rem;
+    }
+   
+    main .section-two .column-two .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }    
+       
+    /* main section-two column-two CARD-TWO */
+    
+    main .section-two .column-two .card-two {
+        max-width: 100%;
+        overflow: hidden;
+        display: block;
+        background-color: #F9F9F9;
+        margin: 1rem 1rem 4rem 1rem;
+    } 
+    
+    main .section-two .column-two .card-two img {
+        width: 100%;
+        height: auto; 
+    }
+    
+    main .section-two .column-two .card-two h3 {
+        font-weight: 580;
+        color: #000000;
+        display: block;
+        font-size: 1.25rem;
+        margin-left: 1.25rem;
+    }
+    
+    main .section-two .column-two .card-two h5 {
+        font-weight: 300;
+        color: #000000;
+        display: block;
+        font-size: 0.875rem;
+        letter-spacing: 0.03125rem;
+        margin-left: 1.25rem;
+    }
+
+    main .section-two .column-two .card-two a {
+        font-weight: 500;
+        color: green;
+        text-decoration: none;
+        transition: all ease-out 400ms;
+        display: block;
+        font-size: 1rem;
+        width: 6.75em;
+        padding: 0.25rem;
+        margin: 1rem 1rem 0.5rem 1rem;
+    }
+
+    main .section-two .column-two .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+  
+    /* main section-two column-two CARD-THREE */
+        
+    main .section-two .column-two .card-three {
+        max-width: 100%;
+        overflow: hidden;
+        display: block;
+        background-color: #F9F9F9;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    
+    main .section-two .column-two .card-three img {
+        width: 100%;
+        height: auto;
+    }
+    
+    main .section-two .column-two .card-three h3 {
+        font-weight: 580;
+        color: #000000;
+        display: block;
+        font-size: 1.25rem;
+        margin-left: 1.25rem;
+    }
+    
+    main .section-two .column-two .card-three h5 {
+        font-weight: 300;
+        color: #000000;
+        display: block;
+        font-size: 0.875rem;
+        letter-spacing: 0.03125rem;
+        margin-left: 1.25rem;
+    }
+    
+    main .section-two .column-two .card-three a {
+        font-weight: 500;
+        color: green;
+        text-decoration: none;
+        transition: all ease-out 400ms;
+        display: block;
+        font-size: 1rem;
+        width: 6.75em;
+        padding: 0.25rem;
+        margin: 1rem 1rem 0.5rem 1rem;
+    }
+    
+    main .section-two .column-two .card-three a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+    
+    /* main SECTION-THREE */
+    
+    main .section-three {
+        max-width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #F9F9F9;
+        padding: 0rem 1rem 2rem;
+    }
+    main .section-three h2 {
+        font-weight: 700;
+        font-size: 1.875rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem 2rem 1rem;
+        background-color: #F9F9F9;
+        color: green;
+    }
+    
+    /* main SECTION-THREE COLUMN-ONE */
+    
+    main .section-three .column-one {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;
+    } 
+    
+    /* main section-three column-one CARD-ONE */
+    
+    main .section-three .column-one .card-one {
+        background-color: #E4E4E4;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+    
+    main .section-three .column-one .card-one .article {
+        padding: 1.25rem;
+    }
+    
+    main .section-three .column-one .card-one h3 {
+        font-weight: 580;
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+
+    main .section-three .column-one .card-one a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: all ease-out 400ms;
+        width: 12em;
+    }
+    
+    main .section-three .column-one .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+    
+    /* main section-three column-one CARD-TWO */
+    
+    main .section-three .column-one .card-two {
+        background-color: #E4E4E4;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+    
+    main .section-three .column-one .card-two .article {
+       padding: 1.25rem;
+    }
+    
+    main .section-three .column-one .card-two h3 {
+        font-weight: 580;
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+    
+    main .section-three .column-one .card-two a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: all ease-out 400ms;
+        width: 7.875em;
+    }
+    
+    main .section-three .column-one .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+
+    /* main section-three column-one CARD-THREE */
+    
+    main .section-three .column-one .card-three {
+        background-color: #E4E4E4;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+    
+    main .section-three .column-one .card-three .article {
+       padding: 1.25rem;
+    }
+    
+    main .section-three .column-one .card-three h3 {
+        font-weight: 580;
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+    
+    main .section-three .column-one .card-three a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: all ease-out 400ms;
+        width: 4.4375em;
+    }
+   
+    main .section-three .column-one .card-three a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+    
+    main .section-three img, h4, h5 {
+        display: none;
+    }
+    
+    /* main SECTION-THREE COLUMN-TWO */
+    
+    main .section-three .column-two {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;
+    }
+    
+    /* main section-three column-two CARD-ONE */
+    
+    main .section-three .column-two .card-one {
+        background-color: #E4E4E4;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+    
+    main .section-three .column-two .card-one .article {
+       padding: 1.25rem;
+    }
+    
+    main .section-three .column-two .card-one h3 {
+        font-weight: 580;
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+    
+    main .section-three .column-two .card-one a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: all ease-out 400ms;
+        width: 3.25em;
+    }
+    
+    main .section-three .column-two .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+
+    /* main section-three column-two CARD-TWO */
+    
+    main .section-three .column-two .card-two {
+        background-color: #E4E4E4;
+        overflow: hidden;
+        margin-bottom: 0.5rem;
+    }
+    
+    main .section-three .column-two .card-two .article {
+       padding: 1.25rem;
+    }
+    
+    main .section-three .column-two .card-two h3 {
+        font-weight: 580;
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+    
+    main .section-three .column-two .card-two a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: all ease-out 400ms;
+        width: 6.75rem;
+    }
+    
+    main .section-three .column-two .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+    
+    /* main section-three column-two CARD-THREE */
+    
+    main .section-three .column-two .card-three {
+        background-color: #E4E4E4;
+        overflow: hidden;
+    }
+    
+    main .section-three .column-two .card-three {
+        padding: 1.25rem;
+    }
+    
+    main .section-three .column-two .card-three h3 {
+        font-weight: 580;
+        font-size: 1.25rem;
+        text-decoration: none;
+        padding: 0.25rem;
+    }
+    
+    main .section-three .column-two .card-three a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1.25rem;
+        transition: all ease-out 400ms;
+        width: 7.5rem;
+    }
+    
+    main .section-three .column-two .card-three a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+
+    /* main SECTION-FOUR */
+    
+    main .section-four h2 {
+        font-weight: 700;
+        font-size: 1.875rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem 2rem 1rem;
+        background-color: #F9F9F9;
+        color: green;
+    }
+
+    /* main SECTION-FIVE */
+    
+    main .section-five {
+        max-width: 100%;
+        height: 100%;
+        display: block;
+        margin: 0;
+        padding-bottom: 1.5rem;
+        background-color: #F9F9F9;
+    }
+    
+    main .section-five .column-one video {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    main .section-five .column-one h2 {
+        display: none;
+    }
+    
+    main .section-five .column-one p {
+        display: none;
+    }
+    
+    main .section-five .column-two {
+        display: none;
+    }
+    
+    /* FOOTER */
+    
+    footer {
+        max-width: 100%;
+        height: 100%;
+        background-color: #F9F9F9;
+        position: sticky;
+        z-index: 1;
+        bottom: 0;
+    }
+    
+    .footer-container {
+        max-width: 100%;
+        height: 4rem;
+        align-items: center;
+        padding: 1.25rem;
+        display: flex;
+    }
+    
+    .footer-container h6 {
+        font-weight: 300;
+        color: #000000;
+        font-size: 0.75rem;
+        display: block;
+    }
+    
+    footer ul {
+        display: none;
+    }
+}
+
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 phones;
+    1em === 16px
+    641px/16=40.1em */
+
+    @media (min-width: 40.1em) {
+
+    /* HEADER */
+
+    header {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .header-container {
+        height: 2rem;
+        align-items: center;
+        padding-bottom: 1rem;
+        margin-left: 0.5rem;
+    }
+  
+    .logo {
+        color: #000000;
+        margin-right: -0.25rem;
+        padding-top: 1.25rem;
+        height: auto;
+        width: 1.75rem;
+    }
+  
+    .header-container h2 {
+        display: flex;
+        color: green;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.375rem;
+        padding-top: 1.25rem;
+    }
+
+    .header-container h2 span {
+        color: #A9A9A9;
+        font-weight: 450;
+        font-size: 1.375rem;
+        margin-right: 1rem;
+    }
+
+    /* NAV */
+
+    .nav-links {
+        display: inline-flex;
+        font-size: 0.875rem;
+        height: auto;
+        align-content: center;
+        align-items: center;
+        padding-top: 1.25rem;
+        gap: 1rem;
+        padding-right: 1.5rem;
+        margin-left: 0.25rem;
+    }
+
+    .nav-links a {
+        transition: all ease-out 400ms;
+        font-weight: 450;
+        color: #000000;
+        text-decoration: none;
+        font-size: 0.875rem;
+    }
+
+    .nav-links a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+        padding: 0.25rem;
+    }
+
+    #on-campus {
+        width: 6em;
+    }
+
+    #online {
+        width: 3.5em;
+    }
+
+    #for-companies {
+        width: 7.75em;
+    }
+
+    #sign-in {
+        width: 3.5em;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    /* MAIN */
+       
+    main {
+        display: block;
+        background-color: #E4E4E4;
+    }
+    
+    /* main SECTION-ONE */
+
+    main .section-one {
+        display: flex;
+    }
+    
+    /* main section-one COLUMN-ONE */
+
+    main .section-one .column-one {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        background-color: #E4E4E4;
+    }
+        
+    main .section-one .column-one img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        padding: 2rem 1.5rem 2rem 1.5rem;
+    }  
+
+    /* main section-one COLUMN-TWO */
+
+    main .section-one .column-two {
+        max-width: 40%;
+        height: auto;
+        display: block;
+        background-color: #E4E4E4;
+        align-content: center;
+        padding-bottom: 2rem;
+        padding-right: 0.5rem;
+        padding-left: 1rem;
+    }
+        
+    main .section-one .column-two h1 {
+        margin-left: -1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-weight: 700;
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+    }
+     
+    main .section-one .column-two h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        margin-left: -1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    main .section-one .column-two .bubble-btn {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        display: block;
+        text-decoration: none;
+        transition: all ease-out 400ms;
+        width: 95%;
+        height: 2.75em;
+        margin-left: -1rem;
+        font-size: 0.75rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+   
+    /* MAIN SECTION-TWO */
+
+    main .section-two {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    /* main section-two COLUMN-ONE */
+   
+    main .section-two .column-one {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;    
+    }
+
+    main .section-two .column-one img {
+        max-width: 100%;
+        height: auto;
+        padding: 2rem 1.5rem 2rem;
+    }
+
+    main .section-two .column-one h2 {
+        font-weight: 680;
+        font-size: 1.25rem;
+        color: green;
+        float: left;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    main .section-two .column-one p {
+        display: block;
+        flex-wrap: wrap;
+        max-width: 100%;
+        float: left;
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        font-size: 0.6875rem;
+        font-weight: 350;
+        line-height: 1rem;
+    }
+ 
+    /* main section-two COLUMN-TWO */
+
+    main .section-two .column-two {
+        max-width: 40%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;
+        padding: 0;
+    }
+
+    /* main section-two column-two CARD-ONE */
+       
+     main .section-two .column-two .card-one {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #F9F9F9;
+        padding: 2rem 1rem 1rem 1rem;
+        margin: 0;
+    }
+
+    main .section-two .column-two .card-one .pictureWrapper {
+        height: auto;
+        max-width: 35%;
+    }
+               
+    main .section-two .column-two .card-one .article {
+        max-width: 65%;
+        display: block;
+        background-color: #F9F9F9;
+        align-content: center;
+        padding-bottom: 0.25rem;
+    }
+        
+    main .section-two .column-two .card-one h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    main .section-two .column-two .card-one h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.6875rem;
+        margin-top: -0.25rem;
+        line-height: 1rem;
+    }
+        
+    main .section-two .column-two .card-one a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 6.75em;
+        margin-top: -0.5rem;
+        padding-left: 0.25rem;
+    }
+        
+    main .section-two .column-two .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+        padding: 0.25rem;
+    }
+
+    /* main section-two column-two CARD-TWO */
+       
+    main .section-two .column-two .card-two {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #F9F9F9;
+        padding: 1rem 1rem 1rem;
+        margin: 0;
+    }
+
+    main .section-two .column-two .card-two .pictureWrapper {
+        height: auto;
+        max-width: 35%;
+    }
+      
+    main .section-two .column-two .card-two .article {
+        max-width: 65%;
+        display: block;
+        background-color: #F9F9F9;
+        align-content: center;
+        padding-bottom: 0.25rem;
+    }
+
+    main .section-two .column-two .card-two h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        padding-top: 0;
+        margin-top: 0;
+    }     
+        
+    main .section-two .column-two .card-two h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.6875rem;
+        margin-top: 0;
+        line-height: 1rem;
+    }
+
+    main .section-two .column-two .card-two a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 6.75em;
+        margin-top: -0.5rem;
+        padding-left: 0.25rem;
+    }
+        
+    main .section-two .column-two .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+        padding: 0.25rem;
+    }
+
+    /* main section-two column-two CARD-THREE */
+  
+    main .section-two .column-two .card-three {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #E4E4E4;
+        padding: 1rem 1rem 1rem;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    main .section-two .column-two .card-three .pictureWrapper {
+        height: auto;
+        max-width: 35%;
+    }
+    
+    main .section-two .column-two .card-three .article {
+        max-width: 65%;
+        display: block;
+        background-color: #E4E4E4; 
+        align-content: center;
+        padding-bottom: 0.25rem;
+    }
+        
+    main .section-two .column-two .card-three h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        padding-top: 0;
+        margin-top: 0;
+    }     
+        
+    main .section-two .column-two .card-three h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 0.6875rem;
+        margin-top: 0;
+        line-height: 1rem;
+    }
+            
+    main .section-two .column-two .card-three a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 6.75em;
+        margin-top: -0.5rem;
+        padding-left: 0.25rem;
+    }
+        
+    main .section-two .column-two .card-three a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+        padding: 0.25rem;
+    }
+    
+    /* MAIN SECTION-THREE */
+        
+    main .section-three {
+        max-width: 100%;
+        height: 100%;
+        background-color: #E4E4E4;
+        display: block;
+        padding-right: 3.125rem;
+        padding-bottom: 2rem;
+        padding-left: 3.125rem;
+        padding-top: 0;
+    }
+        
+    main .section-three h2 {
+        background-color: #E4E4E4;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.25rem;
+        justify-content: center;
+        color: green;
+    }
+    
+    /* main section-three COLUMN-ONE */
+         
+    main .section-three .column-one {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        background-color: #E4E4E4;
+    } 
+
+    /* main section-three column-one CARD-ONE */
+        
+    main .section-three .column-one .card-one {
+        flex: 1;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+        
+    main .section-three .column-one .card-one img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+   
+    main .section-three .column-one .card-one .article {
+        padding: 1rem 1rem 1.5rem 1rem;
+        display: block;
+    }
+        
+    main .section-three .column-one .card-one h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+ 
+    main .section-three .column-one .card-one a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 480ms;
+        width: 8.75em;
+    }
+        
+    main .section-three .column-one .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+        
+    main .section-three .column-one .card-one h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        font-size: 0.6875rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+        line-height: 1rem;
+    }
+
+    /* main section-three column-one CARD-TWO */
+        
+    main .section-three .column-one .card-two {
+        flex: 1;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+        
+    main .section-three .column-one .card-two img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+        
+    main .section-three .column-one .card-two .article {
+        padding: 1rem 1rem 1.5rem 1rem;
+        display: block;
+    }
+        
+    main .section-three .column-one .card-two h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+    
+    main .section-three .column-one .card-two a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 9.5em;
+    }
+        
+    main .section-three .column-one .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+        
+    main .section-three .column-one .card-two h4 {
+        font-weight: 300;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        font-size: 0.65rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+    }
+   
+    main .section-three .column-one .card-two h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        font-size: 0.6875rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+        line-height: 1rem;
+    }
+
+    /* main section-three column-one CARD-THREE */
+        
+    main .section-three .column-one .card-three {
+        flex: 1;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+        
+    main .section-three .column-one .card-three img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+
+    main .section-three .column-one .card-three .article {
+        padding: 1rem 1rem 1.5rem 1rem;
+        display: block;
+    }
+
+    main .section-three .column-one .card-three h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+   
+    main .section-three .column-one .card-three a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: all ease-out 400ms;
+        width: 4em;
+    }
+    
+    main .section-three .column-one .card-three a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+        
+    main .section-three .column-one .card-three h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-bottom: 0.5rem;
+        display: block;
+        font-size: 0.6875rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+        line-height: 1rem;
+    }
+
+    /* main section-three COLUMN-TWO */
+        
+    main .section-three .column-two {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        background-color: #E4E4E4;
+    } 
+
+    /* main section-three column-two CARD-ONE */
+        
+    main .section-three .column-two .card-one {
+        flex: 1;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+        
+    main .section-three .column-two .card-one img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+  
+    main .section-three .column-two .card-one .article {
+        padding: 1rem 1rem 1.5rem 1rem;
+        display: block;
+    }
+   
+    main .section-three .column-two .card-one h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+   
+    main .section-three .column-two .card-one a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 4em;
+    }
+        
+    main .section-three .column-two .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+        
+    main .section-three .column-two .card-one h5 {
+        font-weight: 350;
+        color: #000000;
+        display: block;
+        font-size: 0.6875rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+        line-height: 1rem;
+    }
+
+    /* main section-three column-two CARD-TWO */
+        
+    main .section-three .column-two .card-two {
+        flex: 1;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+        
+    main .section-three .column-two .card-two img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+        
+    main .section-three .column-two .card-two .article {
+        padding: 1rem 1rem 1.5rem 1rem;
+        display: block;
+    }
+        
+    main .section-three .column-two .card-two h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+
+    main .section-three .column-two .card-two a {
+        font-weight: 580;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 6.5em;
+    }
+        
+    main .section-three .column-two .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+        
+    main .section-three .column-two .card-two h5 {
+        font-weight: 350;
+        color: #000000;
+        display: block;
+        font-size: 0.6875rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+        line-height: 1rem;
+    }
+    
+    /* main section-three column-two CARD-THREE */
+
+    main .section-three .column-two .card-three {
+        flex: 1;
+        background-color: #FFFFFF;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+        
+    main .section-three .column-two .card-three img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+        
+    main .section-three .column-two .card-three .article {
+        padding: 1rem 1rem 1.5rem 1rem;
+        display: block;
+        margin: 0;
+    }
+        
+    main .section-three .column-two .card-three h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+  
+    main .section-three .column-two .card-three a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 7.5em;
+    }
+    
+    main .section-three .column-two .card-three a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+
+    main .section-three .column-two .card-three h5 {
+        font-weight: 350;
+        color: #000000;
+        display: block;
+        font-size: 0.6875rem;
+        padding-top: 0.5rem;
+        padding-left: 0.25rem;
+        line-height: 1rem;
+    }
+  
+    /* MAIN SECTION-FOUR */
+        
+    main .section-four h2 {
+        background-color: #F9F9F9;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.25rem;
+    }
+      
+    /* MAIN SECTION-FIVE */
+        
+    main .section-five {
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0;
+        padding-bottom: 1.5rem;
+        background-color: #F9F9F9;
+    }
+
+    /* main section-five COLUMN-ONE */
+    
+    main .section-five .column-one {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;
+    }   
+        
+    main .section-five .column-one video {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    main .section-five .column-one h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        color: green;
+        float: left;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 1.5rem;
+        display: block;
+    }
+ 
+    main .section-five .column-one p {
+        font-weight: 350;
+        display: block;
+        max-width: 100%;
+        float: left;
+        padding-left: 1.5rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+        font-size: 0.6875rem;
+        line-height: 1rem;
+    }
+
+    /* main section-five COLUMN-TWO */
+        
+    main .section-five .column-two {
+        max-width: 40%;
+        height: auto;
+        display: block;
+        background-color: #F9F9F9;    
+    }
+    
+    /* main section-five column-two CARD-ONE */
+        
+    main .section-five .column-two .card-one {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #E4E4E4;
+        padding: 1rem 1rem 1rem;
+        margin: 0;
+    }
+   
+    main .section-five .column-two .card-one img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    main .section-five .column-two .card-one .article {
+        max-width: 65%;
+        display: block;
+        background-color: #E4E4E4;
+        align-content: center;
+    }
+
+    main .section-five .column-two .card-one h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    } 
+
+    main .section-five .column-two .card-one a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 9.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    main .section-five .column-two .card-one a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    }
+   
+    main .section-five .column-two .card-one h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1.25rem;
+        font-size: 0.6875rem;
+        line-height: 1rem;
+    }
+
+    /* main section-five column-two CARD-TWO */
+        
+    main .section-five .column-two .card-two {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #F9F9F9;
+        padding: 1rem 1rem 1rem;
+        margin: 0;
+    }
+   
+    main .section-five .column-two .card-two img {
+        max-width: 35%;
+        height: auto;
+    }
+
+    main .section-five .column-two .card-two .article {
+        max-width: 65%;
+        display: block;
+        background-color: #F9F9F9;
+        align-content: center;
+    }
+
+    main .section-five .column-two .card-two h3 {
+        font-weight: 580;
+        font-size: 0.875rem;
+        display: block;
+        margin-top: 0;
+        padding: 0.25rem;
+    }
+   
+    main .section-five .column-two .card-two a {
+        font-weight: 500;
+        color: green;
+        display: block;
+        text-decoration: none;
+        font-size: 0.75rem;
+        transition: all ease-out 400ms;
+        width: 7.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+          
+    main .section-five .column-two .card-two a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+    } 
+
+    main .section-five .column-two .card-two h5 {
+        font-weight: 350;
+        color: #000000;
+        padding-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1.25rem;
+        font-size: 0.6875rem;
+        line-height: 1rem;
+    }
+
+    /* FOOTER */
+
+    footer {
+        max-width: 100%;
+        height: 100%;
+        background-color: #F9F9F9;
+        padding: 1rem 1.5rem 2.5rem 1.5rem;
+        position: relative;
+        z-index: 1;
+        bottom: 0;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+    }
+
+    .footer-container h6 {
+        font-weight: 350;
+        color: #000000;
+        font-size: 0.6875rem;
+        display: flex;
+        margin-left: -22px;
+    }
+
+    footer ul {
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
+        gap: 1rem;
+        margin-left: auto;
+    }
+
+    .footer-links {
+        align-items: center;
+        display: inline-flex;
+        gap: 1rem;
+        font-size: 0.75rem;
+        font-weight: 350;
+    }
+
+    .footer-links a {
+        transition: all ease-out 400ms;
+        font-weight: 350;
+        color: #000000;
+        text-decoration: none;
+        font-size: 0.75rem;
+    }
+
+    .footer-links a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        padding: 0.25rem;
+        border-radius: 3px;
+    }  
+}
+
+    /* tablet, landscape iPad, low-resolution laptops and desktops;
+    1em === 16px
+    961px/16=60.1.em */
+
+    @media (min-width: 60.1em) {
+
+    /* ADJUSTED HEADER AND NAVBAR HERE */
+    
+    /* HEADER */
+
+    header {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+    }
+
+    .header-container {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+        margin-left: -2rem;
+    }
+  
+    .logo {
+        color: #000000;
+        margin-right: 0.5rem;
+        padding-top: 2rem;
+        height: auto;
+        width: 1.875rem;
+    }
+  
+    .header-container h2 {
+        display: flex;
+        color: green;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.375rem;
+        padding-top: 2rem;
+    }
+
+    .header-container h2 span {
+        color: #A9A9A9;
+        font-weight: 450;
+        font-size: 1.375rem;
+        margin-right: 1rem;
+    }
+
+    /* NAV */
+    
+    .nav-links {
+        display: inline-flex;
+        font-size: 0.875rem;
+        height: auto;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding-top: 2rem;
+        margin-left: 16.5rem;
+    }
+
+    .nav-links a {
+        transition: all ease-out 400ms;
+        font-weight: 450;
+        color: #000000;
+        text-decoration: none;
+        font-size: 0.875rem;
+    }
+
+    .nav-links a:hover {
+        font-weight: 500;
+        background-color: green;
+        color: #FFFFFF;
+        border: green solid 2px;
+        border-radius: 3px;
+        padding: 0.25rem;
+    }
+
+    #on-campus {
+        width: 6em;
+    }
+
+    #online {
+        width: 3.5em;
+    }
+
+    #for-companies {
+        width: 7.75em;
+    }
+
+    #sign-in {
+        width: 3.5em;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    /* MAIN SECTION-ONE COLUMN-TWO */
+
+    main .section-one .column-two {
+        padding-left: 1rem;
+    }
+    
+    main .section-one .column-two h1 {
+        padding-bottom: 1.125rem;
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    main .section-one .column-two h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        padding-bottom: 1.625rem;
+        padding-right: 0.5rem;
+    }
+
+    main .section-one .column-two .bubble-btn {
+        width: 95%;
+        height: 2.875em;
+        font-weight: 500;
+        font-size: 0.8125rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+
+    /* MAIN SECTION-TWO COLUMN-ONE */
+
+    main .section-two .column-one h2 {
+        font-weight: 680;
+        font-size: 1.375rem;
+    }
+    
+    main .section-two .column-one p {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* MAIN SECTION-TWO COLUMN-TWO */
+
+    main .section-two .column-two .card-one h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-two .column-two .card-one h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    main .section-two .column-two .card-one a {
+        font-weight: 500;
+        font-size: 0.875rem;
+        width: 6.5em;
+    }
+
+    main .section-two .column-two .card-two h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-two .column-two .card-two h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    main .section-two .column-two .card-two a {
+        font-weight: 500;
+        font-size: 0.875rem;
+        width: 6.5em;
+    }
+
+    main .section-two .column-two .card-three h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-two .column-two .card-three h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+   
+    main .section-two .column-two .card-three a {
+        font-weight: 500;
+        font-size: 0.875rem;
+        width: 6.5em;
+    }
+
+    /* MAIN SECTION-THREE */
+
+    main .section-three h2 {
+        background-color: #E4E4E4;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.375rem;
+    }
+    
+    /* MAIN SECTION-THREE COLUMN-ONE */
+
+    /* main section-three column-one CARD-ONE */
+
+    main .section-three .column-one .card-one h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    main .section-three .column-one .card-one a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 9.75em;
+    }
+    
+    main .section-three .column-one .card-one a:hover { 
+        font-weight: 500;
+    }
+
+    main .section-three .column-one .card-one h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* main section-three column-one CARD-TWO */
+
+    main .section-three .column-one .card-two h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-three .column-one .card-two a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 10.75em;
+    }
+    
+    main .section-three .column-one .card-two a:hover {
+        font-weight: 500;
+    }
+
+    main .section-three .column-one .card-two h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+ 
+    /* main section-three column-one CARD-THREE */
+
+    main .section-three .column-one .card-three h3 {    
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-three .column-one .card-three a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 6em;
+    }
+    
+    main .section-three .column-one .card-three a:hover {
+        font-weight: 500;
+    }
+
+    main .section-three .column-one .card-three h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* MAIN SECTION-THREE COLUMN-TWO */
+
+    /* main section-three column-two CARD-ONE */
+
+    main .section-three .column-two .card-one h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-three .column-two .card-one a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 4.5em;
+    }
+    
+    main .section-three .column-two .card-one a:hover {
+        font-weight: 500;
+    }
+
+    main .section-three .column-two .card-one h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* main section-three column-two CARD-TWO */
+
+    main .section-three .column-two .card-two h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-three .column-two .card-two a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 7.5em;
+    }
+    
+    main .section-three .column-two .card-two a:hover {
+        font-weight: 500;
+    }
+
+    main .section-three .column-two .card-two h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* main section-three column-two CARD-THREE */
+
+    main .section-three .column-two .card-three h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-three .column-two .card-three a {
+        font-weight: 500;
+        font-size: 0.75rem;
+        width: 8.25em;
+    }
+    
+    main .section-three .column-two .card-three a:hover {
+        font-weight: 500;
+    }
+
+    main .section-three .column-two .card-three h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* MAIN SECTION-FOUR */
+
+    main .section-four h2 {
+        background-color: #F9F9F9;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.375rem;
+    }
+ 
+    /* MAIN SECTION-FIVE */
+
+    /* main section-five COLUMN-ONE */
+
+    main .section-five .column-one h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+        
+    main .section-five .column-one p {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+        line-height: 1.25rem;
+    }
+   
+    /* main section-five COLUMN-TWO */
+
+    /* main section-five column-two CARD-ONE */
+
+    main .section-five .column-two .card-one h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    main .section-five .column-two .card-one a {
+        font-weight: 500;
+        width: 14em;
+    }
+
+    main .section-five .column-two .card-one a:hover {
+        font-weight: 500;
+    }
+
+    main .section-five .column-two .card-one h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* main section-five column-two CARD-TWO */
+
+    main .section-five .column-two .card-two h3 {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+  
+    main .section-five .column-two .card-two a {
+        font-weight: 500;
+        width: 11em;
+    }
+          
+    main .section-five .column-two .card-two a:hover {
+        font-weight: 500;
+    } 
+
+    main .section-five .column-two .card-two h5 {
+        font-weight: 350;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+    }
+
+    /* FOOTER */
+
+    .footer-container h6 {
+        font-weight: 350;
+        font-size: 0.75rem;
+    }
+
+    .footer-links {
+        font-weight: 350;
+        font-size: 0.75rem;
+    }
+
+    .footer-links a {
+        font-weight: 350;
+        font-size: 0.8125rem;
+    }
+}
+
+    /* big landscape tablets, laptops and desktops;
+    1em === 16px
+    1025px/16=64.1em */
+
+    @media (min-width: 64.1em) {
+
+    /* ADJUSTED HEADER AND NAVBAR HERE */
+
+    .header-container {
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 2rem;
+        margin-left: -2rem;
+    }
+
+    .logo {
+        color: #000000;
+        margin-right: 0.5rem;
+        padding-top: 2rem;
+        height: auto;
+        width: 2rem;
+    }
+
+    .header-container h2 {
+        display: flex;
+        color: green;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .header-container h2 span {
+        color: #A9A9A9;
+        font-weight: 450;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    /* NAV */
+
+    .nav-links {
+        margin-left: 16rem;
+        font-size: 1rem;
+    }
+   
+    .nav-links p {
+        font-size: 1rem;
+    }
+
+    /* MAIN SECTION-ONE COLUMN-TWO */
+
+    main .section-one .column-two {
+        padding-left: 1rem;
+    }
+
+    main .section-one .column-two h1 {
+        padding-bottom: 1.25rem;
+        font-weight: 700;
+        font-size: 1.875rem;
+        line-height: 2.375rem;
+    }
+    
+    main .section-one .column-two h3 {
+        font-weight: 600;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding-bottom: 1.75rem;
+        padding-right: 0.5rem;
+    }
+
+    main .section-one .column-two .bubble-btn {
+        width: 95%;
+        height: 3em;
+        font-weight: 500;
+        font-size: 0.875rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+    
+    /* MAIN SECTION-TWO COLUMN-ONE */
+
+    main .section-two .column-one h2 {
+        font-weight: 680;
+        font-size: 1.375rem;
+    }
+   
+    main .section-two .column-one p {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+   
+    /* MAIN SECTION-TWO COLUMN-TWO */  
+    
+    /* main section-two column-two CARD-ONE */ 
+
+    main .section-two .column-two .card-one h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+    
+    main .section-two .column-two .card-one h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-two .column-two .card-one a {
+        font-weight: 500;
+        font-size: 1rem;
+        width: 6.5em;
+    }
+
+    /* main section-two column-two CARD-TWO */ 
+
+    main .section-two .column-two .card-two h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+    
+    main .section-two .column-two .card-two h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-two .column-two .card-two a {
+        font-weight: 500;
+        font-size: 1rem;
+        width: 6.5em;
+    }
+
+    /* main section-two column-two CARD-THREE */ 
+
+    main .section-two .column-two .card-three h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+    
+    main .section-two .column-two .card-three h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-two .column-two .card-three a {
+        font-weight: 500;
+        font-size: 1rem;
+        width: 6.5em;
+    }
+
+    /* MAIN SECTION-THREE */
+
+    main .section-three h2 {
+        background-color: #E4E4E4;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.375rem;
+    }
+
+    /* MAIN SECTION-THREE COLUMN-ONE */
+
+    /* main section-three column-one CARD-ONE */
+
+    main .section-three .column-one .card-one h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-three .column-one .card-one h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-three .column-one .card-one a {
+        width: 11em;
+    }
+
+    /* main section-three column-one CARD-TWO */
+
+    main .section-three .column-one .card-two h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-three .column-one .card-two h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-three .column-one .card-two a {
+        width: 12em;
+    }
+
+    /* main section-three column-one CARD-THREE */
+
+    main .section-three .column-one .card-three h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-three .column-one .card-three h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-three .column-one .card-three a {
+        width: 6.5em;
+    }
+
+    /* MAIN SECTION-THREE COLUMN-TWO */
+
+    /* main section-three column-two CARD-ONE */
+
+    main .section-three .column-two .card-one h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-three .column-two .card-one h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-three .column-two .card-one a { 
+        width: 5em;
+    }
+
+    /* main section-three column-two CARD-TWO */
+
+    main .section-three .column-two .card-two h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-three .column-two .card-two h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-three .column-two .card-two a {
+        width: 8.25em;
+    }
+
+    /* main section-three column-two CARD-THREE */
+
+    main .section-three .column-two .card-three h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-three .column-two .card-three h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    main .section-three .column-two .card-three a {
+        width: 9.25em;
+    }
+
+    /* MAIN SECTION-FOUR */
+
+    main .section-four h2 {
+        background-color: #F9F9F9;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.375rem;
+    }
+
+    /* MAIN SECTION-FIVE */
+
+    /* main section-five COLUMN-ONE */
+
+    main .section-five .column-one h3 {  
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+
+    main .section-five .column-one p {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    /* main section-five COLUMN-TWO */
+
+    /* main section-five column-two CARD-ONE */
+
+    main .section-five .column-two .card-one h3 {
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+    
+    main .section-five .column-two .card-one a {
+        font-weight: 500;
+        width: 15.5em;
+    }
+    
+    main .section-five .column-two .card-one a:hover {
+        font-weight: 500;
+    }
+
+    main .section-five .column-two .card-one h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+
+    /* main section-five column-two CARD-TWO */
+
+    main .section-five .column-two .card-two h3 {
+        font-weight: 600;
+        font-size: 1.125rem;
+    }
+  
+    main .section-five .column-two .card-two a {
+        font-weight: 500;
+        width: 12.25em;
+    }
+          
+    main .section-five .column-two .card-two a:hover {
+        font-weight: 500;
+    } 
+
+    main .section-five .column-two .card-two h5 {
+        font-weight: 300;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+} 
+
+    /* (hi-res laptops and desktops);
+    1em === 16px
+    1281px/16=80.1em */
+
+    @media (min-width: 80.1em) {
+
+    /* HEADER */
+
+    .header-container {
+        margin-left: -4.5rem;
+    }
+
+    .logo {
+        color: #000000;
+        padding-top: 2rem;
+        height: auto;
+        width: 2.125rem;
+        margin-right: -1rem;
+    }
+
+    .header-container h2 {
+        display: flex;
+        color: green;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1.625rem;
+    }
+
+    .header-container h2 span {
+        color: #A9A9A9;
+        font-weight: 450;
+        margin-right: 1.625rem;
+        font-size: 1.625rem;
+    }
+
+    /* NAV */
+
+    .nav-links {
+        font-size: 1.125rem;
+        margin-left: 30rem;
+    }
+
+    /* MAIN SECTION-ONE COLUMN-TWO */
+
+    main .section-one .column-two {
+        padding-left: 1rem;
+    }
+
+    main .section-one .column-two h1 {
+        padding-bottom: 1.375rem;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    
+    main .section-one .column-two h3 {
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        padding-bottom: 1.875rem;
+        padding-right: 0.5rem;
+    }
+   
+    main .section-one .column-two .bubble-btn {
+        width: 95%;
+        height: 3.125em;
+        font-weight: 500;
+        font-size: 0.9375rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+    }
+   
+    /* MAIN SECTION-TWO COLUMN-ONE */
+
+    main .section-two .column-one h2 {
+        font-weight: 680;
+        font-size: 1.5rem;
+    }
+
+    main .section-two .column-one p {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+  
+    /* MAIN SECTION-TWO COLUMN-TWO */
+
+    /* main section-two column-two CARD-ONE */
+
+    main .section-two .column-two .card-one h3 {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    
+    main .section-two .column-two .card-one h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    
+    main .section-two .column-two .card-one a {
+        font-size: 1rem;
+        width: 6.5em;
+    }
+
+    /* main section-two column-two CARD-TWO */
+
+    main .section-two .column-two .card-two h3 {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    
+    main .section-two .column-two .card-two h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-two .column-two .card-two a {
+        font-size: 1rem;
+        width: 6.5em;
+    }
+
+    /* main section-two column-two CARD-THREE */
+
+    main .section-two .column-two .card-three h3 {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+  
+    main .section-two .column-two .card-three h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-two .column-two .card-three a {
+        font-size: 1rem;
+        width: 6.5em;
+    }
+
+    /* MAIN SECTION-THREE */
+
+    main .section-three h2 {
+        background-color: #E4E4E4;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.5rem;
+    }
+
+    /* MAIN SECTION-THREE COLUMN-ONE */
+
+    /* main section-three column-one CARD-ONE */
+
+    main .section-three .column-one .card-one h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-three .column-one .card-one h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-three .column-one .card-one a {
+        width: 12em;
+    }
+
+    /* main section-three column-one CARD-TWO */
+
+    main .section-three .column-one .card-two h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-three .column-one .card-two h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-three .column-one .card-two a {
+        width: 13em;
+    }
+
+    /* main section-three column-one CARD-THREE */
+
+    main .section-three .column-one .card-three h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-three .column-one .card-three h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-three .column-one .card-three a {
+        width: 7.5em;
+    }
+
+    /* MAIN SECTION-THREE COLUMN-TWO */
+
+    /* main section-three column-two CARD-ONE */
+
+    main .section-three .column-two .card-one h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+    
+    main .section-three .column-two .card-one h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-three .column-two .card-one a { 
+        width: 5.25em;
+    }
+
+    /* main section-three column-two CARD-TWO */
+
+    main .section-three .column-two .card-two h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-three .column-two .card-two h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-three .column-two .card-two a {
+        width: 9em;
+    }
+
+    /* main section-three column-two CARD-THREE */
+
+    main .section-three .column-two .card-three h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-three .column-two .card-three h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    main .section-three .column-two .card-three a {
+        width: 10em;
+    }
+
+    /* MAIN SECTION-FOUR */
+
+    main .section-four h2 {
+        background-color: #F9F9F9;
+        padding: 2rem;
+        font-weight: 680;
+        font-size: 1.5rem;
+    }
+
+    /* MAIN SECTION-FIVE */
+    
+    /* main section-five COLUMN-ONE */
+
+    main .section-five .column-one h3 {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-five .column-one p {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+   
+    /* MAIN SECTION-FIVE COLUMN-TWO */
+
+    /* main section-five column-two CARD-ONE */
+
+    main .section-five .column-two .card-one h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-five .column-two .card-one a {
+        font-weight: 500;
+        width: 17.25em;
+    }
+    
+    main .section-five .column-two .card-one a:hover {
+        font-weight: 500;
+    }
+
+    main .section-five .column-two .card-one h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+
+    /* main section-five column-two CARD-TWO */
+
+    main .section-five .column-two .card-two h3 {  
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    main .section-five .column-two .card-two a {
+        font-weight: 500;
+        width: 13.5em;
+    }
+          
+    main .section-five .column-two .card-two a:hover {
+        font-weight: 500;
+    } 
+
+    main .section-five .column-two .card-two h5 {
+        font-weight: 300;
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+}
+
+
+
+   
+  
+  
+
+
